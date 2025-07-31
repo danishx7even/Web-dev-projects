@@ -1,0 +1,138 @@
+.main-heading{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main {
+    width: 100%;
+    
+}
+
+.video-section{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.video-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+iframe{
+    margin-bottom: 20px;
+}
+
+.downloadable-link{
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+}
+
+.comment-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+    font-size: 24px;
+    color: rgb(124, 230, 98);
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-section label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.comment-section input[type="text"],
+.comment-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.comment-section input[type="text"]:focus,
+.comment-section textarea:focus {
+    border: 1px solid rgb(124, 230, 98);
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+}
+
+.comment-section textarea {
+    resize: none;
+    height: 150px;
+}
+
+.comment-section button {
+    background-color: rgb(124, 230, 98);
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comment-section button:hover {
+    background-color: rgb(124, 230, 98);
+}
+
+
+.past-comments {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.past-comments h3 {
+    font-size: 20px;
+    color: rgb(124, 230, 98);
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.comment-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.comment-user {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.comment-text {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}

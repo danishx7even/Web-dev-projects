@@ -1,0 +1,226 @@
+
+   
+
+    .hero-section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    
+
+    .hero-img{
+        width: 50%;
+    }
+
+    .hero-img img{
+        width: 100%;
+        display: block;
+    }
+
+    .hero-text{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-text h1{
+        font-size: clamp(1.3rem, 5vw + 1rem, 5rem);
+    }
+
+    .hero-text p {
+        font-size: clamp(1rem, 2vw + 0.5rem, 1.8rem);
+        width: 350px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-text .explore-btn {
+        padding: 8px 8px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(124, 230, 98);
+        font-weight: 600;
+        color: white;
+        font-size: clamp(0.8rem, 1vw + 0.5rem, 1.4rem);
+    }
+
+
+   
+
+    .course-heading{
+        font-size: clamp(1.4rem, 5vw + 1rem, 4.5rem);
+        text-align: center;
+    }
+
+    .course-section{
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .course-card {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 20px;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.1),
+        -3px -3px 10px rgba(0,0,0,0.1);
+        border-radius: 12px;
+    }
+
+    .card-img{
+        width: 100%;
+        border: none;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.1),
+        0px -2px 10px rgba(0,0,0,0.1);
+        padding: 10px 0px;
+        border-radius: 2px;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-heading{
+        font-size: 22px;
+        margin-bottom: 5px;
+      
+    }
+
+    .card-description {
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .card-btn{
+        padding: 8px 8px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(124, 230, 98);
+        font-weight: 600;
+        color: white;
+        font-size: 16px;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+
+    .card-btn:hover{
+         background-color: rgb(72, 175, 46);
+    }
+
+    .benefits-section{
+        margin-top: 100px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .benefit-heading{
+        font-size: clamp(1.4rem, 5vw + 1rem, 4.5rem);
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .benefit-heading span {
+        color: hsl(108, 73%, 64%);
+    }
+
+    .benefit-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+    .benefit-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.benefit-list li {
+  position: relative;
+  padding-left: 40px;
+  font-size: clamp(1rem, 1.5vw + 1rem, 2rem);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.benefit-list li::before {
+  content: '\f058'; 
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: rgb(124, 230, 98);
+}
+
+
+
+
+.benefit-section-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-section-image img{
+    width: 80%;
+
+}
+
+ @media (max-width: 950px) {
+
+        .hero-section {
+            flex-wrap: wrap-reverse;
+        }
+        .hero-img{
+            width: 100%;
+        }
+        
+
+        .hero-text{
+            width: 100%;
+        }
+
+        .benefit-content {
+            flex-wrap: wrap-reverse;
+        }
+
+        .benefit-list{
+            width: 100%;
+        }
+
+        .benefit-section-image{
+            width: 100%;
+        }
+    }

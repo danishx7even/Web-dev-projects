@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect-HTML course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="course-detail.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="images/logo.png" alt="educonnect logo">
+
+        </div>
+        <nav class="right-header">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-heading"> HTML Course</h1>
+
+        <section class="video-section">
+            <article>
+
+                <iframe class="video" width="700" height="400" src="https://www.youtube.com/embed/cpde-lI7_pE?si=HQug96bQlCKlsAqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    
+                <a class="downloadable-link" download href="">Download Notes</a>
+                
+
+            </article>
+        </section>
+
+        <section class="comment-section">
+            <h2>Comment</h2>
+
+            <form action="" method="post">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" required placeholder="John">
+
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write comment"></textarea>
+
+                <button type="submit">Post Comment</button>
+
+            </form>
+
+            <div class="past-comments">
+        <h3>Previous Comments</h3>
+        <div class="comment-box">
+            <p class="comment-user">John Doe</p>
+            <p class="comment-text">This course is amazing! Learned a lot about HTML basics.</p>
+        </div>
+        <div class="comment-box">
+            <p class="comment-user">Sarah</p>
+            <p class="comment-text">Thanks for the video and notes, very helpful.</p>
+        </div>
+    </div>
+        </section>
+     
+    </main>
+
+
+    <footer>
+        <div class="social-links">
+            <a target="_blank" href="https://www.facebook.com"><img src="images/facebook.png" alt=""></a>
+            <a target="_blank" href="https://www.youtube.com"><img src="images/youtube.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com"><img src="images/instagram.png" alt=""></a>
+        </div>
+
+        <p class="copyright">&copy; EduConnect</p>
+        <a  class="email-link" href="mailto:danish.7even@gmail.com">Contact Us</a>
+
+    </footer>
+
+
+    <script src="courses.js"></script>
+    
+</body>
+</html>

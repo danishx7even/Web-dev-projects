@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduConnect-Courses</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="courses.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <img src="images/logo.png" alt="educonnect logo" />
+      </div>
+      <nav class="right-header">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <h1 class="hero-heading">Courses</h1>
+
+        <form id="search-form" action="" method="get" autocomplete="off">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search for Courses"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="course-details-section">
+        <article>
+          <div class="course-img">
+            <img src="images/html-course-img.avif" alt="Html course image" />
+          </div>
+          <div class="course-details">
+            <h3 class="course-heading">HTML(Hyper Text Markup Language)</h3>
+            <p class="course-description">
+              The standard markup language for creating the structure and
+              content of web pages, such as headings, paragraphs, and images.
+            </p>
+
+            <details>
+              <summary>Concepts to learn</summary>
+              <ul class="concept-list">
+                <li>Understanding HTML Structure & Tags</li>
+                <li>Working with Forms & Inputs</li>
+                <li>Semantic Elements & Accessibility</li>
+                <li>Embedding Media (Images, Videos, Iframes)</li>
+              </ul>
+            </details>
+            <a href="course-detail.html" class="course-btn" data-course-name="html">Start Course</a>
+          </div>
+        </article>
+        <article>
+          <div class="course-img">
+            <img src="images/css-course-img.avif" alt="Html course image" />
+          </div>
+          <div class="course-details">
+            <h3 class="course-heading">CSS(Cascading Style Sheets)</h3>
+            <p class="course-description">
+              A styling language used to design and format the layout, colors,
+              fonts, and responsiveness of web pages.
+            </p>
+
+            <details>
+              <summary>Concepts to learn</summary>
+              <ul class="concept-list">
+                <li>CSS Selectors & Specificity</li>
+                <li>Flexbox & Grid Layouts</li>
+                <li>Responsive Design & Media Queries</li>
+                <li>Animations & Transitions</li>
+              </ul>
+            </details>
+            <a href="course-detail.html" class="course-btn" data-course-name="css">Start Course</a>
+          </div>
+        </article>
+        <article>
+          <div class="course-img">
+            <img src="images/js-course-img.avif" alt="Html course image" />
+          </div>
+          <div class="course-details">
+            <h3 class="course-heading">JS(Javascript)</h3>
+            <p class="course-description">
+              A programming language that adds interactivity, dynamic content,
+              and functionality to web pages in the browser
+            </p>
+
+            <details>
+              <summary>Concepts to learn</summary>
+              <ul class="concept-list">
+                <li>Variables, Data Types & Operators</li>
+                <li>DOM Manipulation & Events</li>
+                <li>Functions & ES6 Features</li>
+                <li>Fetch API & Async Programming</li>
+              </ul>
+            </details>
+            <a href="course-detail.html" class="course-btn" data-course-name="js">Start Course</a>
+          </div>
+        </article>
+        <article>
+          <div class="course-img">
+            <img src="images/php-course-img.avif" alt="Html course image" />
+          </div>
+          <div class="course-details">
+            <h3 class="course-heading">PHP(Hypertext Preprocessor)</h3>
+            <p class="course-description">
+              A server-side scripting language used for developing dynamic web
+              pages and handling backend logic.
+            </p>
+
+            <details>
+              <summary>Concepts to learn</summary>
+              <ul class="concept-list">
+                <li>PHP Syntax & Variables</li>
+                <li>Working with Forms & Data Handling</li>
+                <li>Sessions & Cookies</li>
+                <li>Connecting PHP with MySQL Database</li>
+              </ul>
+            </details>
+            <a href="course-detail.html" class="course-btn" data-course-name="php">Start Course</a>
+          </div>
+        </article>
+        <article>
+          <div class="course-img">
+            <img
+              src="images/wordpress-course-img.avif"
+              alt="Html course image"
+            />
+          </div>
+          <div class="course-details">
+            <h3 class="course-heading">Wordpress</h3>
+            <p class="course-description">
+              A popular content management system (CMS) built with PHP, enabling
+              users to create and manage websites easily without coding
+            </p>
+
+            <details>
+              <summary>Concepts to learn</summary>
+              <ul class="concept-list">
+                <li>Installing & Setting up WordPress</li>
+                <li>Working with Themes & Plugins</li>
+                <li>Customizing Pages & Posts</li>
+                <li>Managing SEO & Security Basics</li>
+              </ul>
+            </details>
+            <a href="course-detail.html" class="course-btn" data-course-name="wordpress">Start Course</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <a target="_blank" href="https://www.facebook.com"
+          ><img src="images/facebook.png" alt=""
+        /></a>
+        <a target="_blank" href="https://www.youtube.com"
+          ><img src="images/youtube.png" alt=""
+        /></a>
+        <a target="_blank" href="https://www.instagram.com"
+          ><img src="images/instagram.png" alt=""
+        /></a>
+      </div>
+
+      <p class="copyright">&copy; EduConnect</p>
+      <a class="email-link" href="mailto:danish.7even@gmail.com">Contact Us</a>
+    </footer>
+
+    <script>
+      let courseBtn = document.querySelectorAll(".course-btn")
+
+      let courseName = JSON.parse(localStorage.getItem("courseName"))
+
+      courseBtn.forEach(btn => {
+
+        btn.addEventListener('click', ()=> {
+          
+            localStorage.setItem("courseName",JSON.stringify(btn.dataset.courseName))
+          
+
+        })
+        
+      });
+    </script>
+  </body>
+</html>

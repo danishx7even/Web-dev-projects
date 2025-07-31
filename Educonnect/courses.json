@@ -1,0 +1,59 @@
+{
+  "courses": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "videoLink": "https://www.youtube.com/embed/zutb5Clb_0Y?si=m6w04xgTFGqQ7UD-",
+      "notesLink": "notes/html_notes.pdf",
+      "comments": [
+        "Great explanation on semantic tags!",
+        "Loved the examples for forms.",
+        "Can you add a section on HTML5 APIs?"
+      ]
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "videoLink": "https://www.youtube.com/embed/-G-zic_LS0A?si=sKeL7VivS2DE5DC_",
+      "notesLink": "notes/css_notes.pdf",
+      "comments": [
+        "Very clear explanation on Flexbox!",
+        "Please include more animations examples.",
+        "Media queries section was helpful."
+      ]
+    },
+    {
+      "id": "js",
+      "name": "JavaScript",
+      "videoLink": "https://www.youtube.com/embed/a-wVHL0lpb0?si=R1WvnxsNMc57oiHt",
+      "notesLink": "notes/js_notes.pdf",
+      "comments": [
+        "DOM manipulation examples are excellent.",
+        "Async/Await needs more depth.",
+        "Loved the interactive examples!"
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "videoLink": "https://www.youtube.com/embed/zZ6vybT1HQs?si=YsYLoxxBMnj_b3dm",
+      "notesLink": "notes/php_notes.pdf",
+      "comments": [
+        "Connecting with MySQL was very clear.",
+        "Include file upload example.",
+        "Well-paced and informative."
+      ]
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "videoLink": "https://www.youtube.com/embed/cpde-lI7_pE?si=HQug96bQlCKlsAqY",
+      "notesLink": "notes/wordpress_notes.pdf",
+      "comments": [
+        "Loved the plugin explanation.",
+        "Please add SEO setup details.",
+        "Easy to follow for beginners!"
+      ]
+    }
+  ]
+}
