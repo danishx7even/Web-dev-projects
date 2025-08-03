@@ -19,23 +19,52 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/testing.css" />
     <title>Softing-Software Landing Page</title>
+
+
   </head>
 
 
   <body>
-    <header>
+  
+
+
+
+    <main class="wrapper">
+
+        <header>
       <div class=" basic-header transparent-header ">
       <div class="left-nav">
         <img src="assets/images/logo-light.png" alt="Softing logo" />
       </div>
       <nav class="center-nav">
-        <a href="">Home</a>
-        <a href="">Features</a>
-        <a href="">Overview</a>
-        <a href="">Pricing</a>
-        <a href="">Pages</a>
-        <a href="">Contact</a>
+        <ul class="navlinks-list">
+          <li class="home-link"><a href="">Home<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="menu-links ">
+              <li><a href="#">Home version one</a></li>
+              <li><a href="#">Home version two</a></li>
+              <li><a href="#">Home version three</a></li>
+              <li><a href="#">Home version four</a></li>
+              <li><a href="#">Home version five</a></li>
+              <li><a href="#">Home version six</a></li>
+            </ul>
+          </li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Pricing</a></li>
+          <li class="page-link"><a  href="">Pages<i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="menu-links ">
+              <li><a href="#">Blog Grid</a></li>
+              <li><a href="#">Blog Single</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Error 404</a></li>
+            </ul>
+          </li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        
       </nav>
       <div class="right-nav">
         <button class="btn login-btn">Login</button>
@@ -43,32 +72,111 @@
       </div>
       </div>
       <div class=" basic-header filled-header ">
-        <div class="left-nav">
+      <div class="left-nav">
         <img src="assets/images/logo.png" alt="Softing logo" />
       </div>
       <nav class="center-nav black-links">
-        <a href="">Home</a>
-        <a href="">Features</a>
-        <a href="">Overview</a>
-        <a href="">Pricing</a>
-        <a href="">Pages</a>
-        <a href="">Contact</a>
+         <ul class="navlinks-list">
+          <li class="home-link"><a href="">Home<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="menu-links ">
+              <li><a href="#">Home version one</a></li>
+              <li><a href="#">Home version two</a></li>
+              <li><a href="#">Home version three</a></li>
+              <li><a href="#">Home version four</a></li>
+              <li><a href="#">Home version five</a></li>
+              <li><a href="#">Home version six</a></li>
+            </ul>
+          </li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Pricing</a></li>
+          <li class="page-link"><a  href="">Pages<i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="menu-links ">
+              <li><a href="#">Blog Grid</a></li>
+              <li><a href="#">Blog Single</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Error 404</a></li>
+            </ul>
+          </li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </nav>
       <div class="right-nav">
         <button class="btn login-btn">Login</button>
         <button class="btn signup-btn filled-btn">Sign Up</button>
       </div>
       </div>
+
+      <div class="mobile-nav-bar">
+
+        <div class="left-nav">
+          <span class="hamburger-btn">
+            <i class="fa-solid fa-bars fa-2xl" ></i>
+          </span>
+          
+          <img src="assets/images/logo.png" alt="Softing logo" />
+        </div>
+
+
+      <div class="right-nav">
+        <button class="btn login-btn">Login</button>
+        <button class="btn signup-btn filled-btn">Sign Up</button>
+      </div>
+      </div>
+
+
+
+
+        <div id="navbar-menu">
+
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <button type="button" class="navbar-toggle">
+                        <i class="fa fa-times fa-bars"></i>
+                    </button>
+                    
+                    <ul class="mob-navlinks-list" >
+                        <li >
+                            <a href="#" >Home</a>
+                        </li>
+                        <li>
+                            <a  href="#">Features</a>
+                        </li>
+                        <li>
+                            <a  href="#">Overview</a>
+                        </li>
+                        <li>
+                            <a  href="#">Pricing</a>
+                        </li>
+                        <li >
+                            <a href="#" >Pages</a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     </header>
-
-    <main class="background-layer">
-      <img src="assets/images/banner.jpg" alt="banner image" />
-    </main>
-
-
-
-    <main class="foreground-layer">
       <section class="hero-section">
         <h1 class="hero-heading">
           Softing building <span>software</span> for your business
