@@ -1,0 +1,293 @@
+
+
+/* Contact section */
+
+.contact-section{
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: var(--secondary-bg-clr);
+}
+
+.contact-upper-container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.card{
+    width: 25%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--light-pink-clr);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card-img-container{
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--light-pink-clr);
+    border-radius: 5px;
+    background-color: var(--secondary-bg-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h3{
+    font-size:24px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--light-gray-clr);
+}
+
+
+.contact-lower-container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 70px;
+}
+
+.img-container{
+    width: 60%;
+    margin-left: -230px;
+}
+
+.img-container img{
+    max-width: 110%;
+    display: block;
+    height: auto;
+}
+
+.form-container{
+    width: 48%;
+    padding: 50px 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+.form-container h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin-top: 30px;
+}
+
+.input-container:has(input:not([type="checkbox"]), select)
+ {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid var(--light-purple-clr);
+    border-radius: 4px;
+
+    > input, select{
+        width: 100%;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #fff;
+        color: var(--light-gray-clr);
+    }
+
+    > input:focus, select:focus{
+        outline: none;
+    }
+
+
+}
+
+.input-container:nth-last-child(3) {
+    width: 100%;
+    padding-right: 20px;
+
+    > textarea{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font-size: 14px;
+    }
+
+    > textarea:focus{
+        outline: none;
+    }
+}
+
+.input-container:has(input[type="checkbox"]) {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    color: var(--light-gray-clr);
+    > input{
+        width: 20px;
+        
+    }
+}
+
+button[type="submit"] {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    gap: 10px;
+    border: none;
+    background-color: var(--primary-clr);
+}
+
+/* Map section */
+.map-section{
+    width: 100%;
+    pointer-events: none;
+    margin-bottom: -30px;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (max-width:1400px) {
+    
+
+    /* form container */
+    .img-container{
+        width: 55%;
+        margin-left: -200px;
+    }
+
+    .img-container img{
+        width: 120%;
+    }
+
+
+    
+}
+
+
+
+
+
+@media  screen and (max-width:1200px) {
+    
+    /* Contact section */
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card-container .card{
+        width: 40%;
+    }
+
+
+     /* form container */
+     .contact-lower-container{
+        flex-wrap: wrap;
+     }
+
+     .form-container{
+        max-width: 900px;
+        width: 80%;
+        margin: auto;
+     }
+
+    .img-container{
+        width: 100%;
+        margin-left: -100px;
+    }
+
+    .img-container img{
+        width: 120%;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+    /* Contact Section */
+    .contact-upper-container{
+        width: 90%;
+    }
+
+    .card-container .card{
+        width: 100%;
+    }
+
+    /* form container */
+    .input-container:has(input:not([type="checkbox"]), select){
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+@media  screen and (max-width:480px) {
+
+
+    /* Contact section */
+    .contact-upper-container{
+        width: 100%;
+    }
+
+
+    /* form section */
+    .form-container{
+        width: 100%;
+        margin-inline: 20px;
+     }
+
+    .img-container{
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .img-container img{
+        width: 120%;
+    }
+
+
+
+}
