@@ -1029,9 +1029,15 @@ footer .footer-lower-left{
   right: 0;
 }
 
+/* Marquee Section */
 
+.marquee-section {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: var(--secondary-bg-clr);
+}
 
-/* Marquee section */
+/* 80 700 */
 
 .marquee-wrapper {
   width: 100%;
@@ -1065,6 +1071,40 @@ footer .footer-lower-left{
   }
 }
 
+/* Marquee section
+
+.marquee-wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.marquee-slider {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
+}
+
+.marquee-item {
+  font-size: 80px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #bcb8b1;
+}
+
+@keyframes scroll-left {
+  form {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 40px));
+  }
+}
+ */
 
 
 /* Team section */
@@ -1526,6 +1566,119 @@ footer .footer-lower-left{
 }
 
 
+/* Card section */
+.card-section {
+  width: 100%;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg-clr);
+}
+
+.card-container-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 35%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  background-image: url(./../images/about/offerBG1_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card-image {
+  width: 40%;
+  position: relative;
+  z-index: 2;
+}
+
+.card-image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card-content h6 {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--primary-clr);
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.card-content p {
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--orange-bg-clr);
+  font-family: "Epilogue", sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  /* width: %; */
+  padding: 13px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0.8px solid var(--primary-clr);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: var(--primary-clr);
+}
+
+.card:nth-child(2) a {
+  background-color: var(--orange-bg-clr);
+}
+
+.card-sliding-img {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  animation: sliding-img 1.2s linear alternate infinite;
+}
+
+@keyframes sliding-img {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(40px);
+  }
+}
+
 
 
 
@@ -1543,6 +1696,23 @@ footer .footer-lower-left{
     .nav-container{
         width: 85%;
     }
+
+
+     /* Card section */
+    .card-container-wrapper{
+        max-width: 1250px;
+    }
+
+
+    /* News Section */
+    .news-cards-wrapper{
+      width: 1100px;
+    }
+
+    .news-card{
+      width: 350px;
+    }
+    
 
 }
 
@@ -1660,7 +1830,88 @@ footer .footer-lower-left{
 }
 
 
+@media screen and (max-width:980px) {
+  
+  
+  /* Card section */
 
+  .card-wrapper{
+    margin: auto;
+  }
+
+  .card-container-wrapper{
+        width: 80%;
+    }
+
+  .card{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-content{
+    width: 70%;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+
+
+    /* Team section */
+
+  .chef-card{
+    width: 500px;
+  }
+  .chef-img{
+    top: -270px;
+  }
+
+  /* Testimonial section */
+  .testimonial-thumb{
+    width: 100%;
+  }
+
+  .testimonial-thumb img{
+    max-width: 100%;
+  }
+
+  .title-area h2{
+    font-size: 34px;
+  }
+
+  .testimonials-content{
+    width: 60%;
+    left: 20%;
+    top: 50px;
+  }
+
+
+  /* News card section */
+.news-cards-wrapper{
+      width: 700px;
+      
+    }
+
+    .news-card{
+      width: 330px;
+    }
+
+
+    /* Offer section */
+    .offer{
+      width: 80%;
+      padding: 30px;
+    }
+
+    .offer-image{
+    width: 100%;
+  }
+
+  .offer-content{
+    width: 100%;
+  }
+
+
+}
 
 
 
@@ -1706,9 +1957,151 @@ footer .footer-lower-left{
     }
 
 
-    .marquee-item{
+   
+
+
+    /* Marquee */
+  .marquee-item{
     font-size: 60px !important;
   }
+
+  .marquee-section {
+    padding-top: 20px;
+  }
+
+  .slider-portion{
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+
+  /* Card section */
+
+  .card{
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .card-container-wrapper{
+    width: 540px;
+  }
+
+  .card-image{
+    width: 400px;
+  }
+
+  .card-content{
+    width: 50%;
+    gap: 20px;
+  }
+
+  .card-sliding-img{
+    left: 40px;
+  }
+
+  /* Team section */
+  
+  .chef-card{
+    width: 100%;
+  }
+  .chef-img{
+    top: -80%;
+  }
+
+
+  /* Testimonial section */
+  .testimonials-content{
+    width: 40%;
+    left: 5%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .title-area{
+    width: 450px;
+    align-items: flex-start;
+  }
+  .title-area h2{
+    font-size: 28px;
+  }
+
+  .testimonial{
+    height: 350px;
+  }
+
+  .testimonial-slider-wrapper{
+    max-width: 450px;
+  }
+
+  .testimonial-description{
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  @keyframes slide-testimonial {
+  0%,
+  29% {
+    transform: translateX(0%);
+  }
+  33%,
+  62% {
+    transform: translateX(calc(-450px * 1));
+  }
+  66%,
+  95% {
+    transform: translateX(calc(-450px * 2));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* News card section */
+.news-cards-wrapper{
+      width: 500px;
+      
+    }
+
+    .news-card{
+      width: 500px;
+    }
+
+    .main-title-area h2{
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .team-section .main-title{
+      font-size: 35px;
+      text-align: center;
+    }
+
+
+
+
+    /* Offer section */
+    .offer{
+      width: 100%;
+      padding: 50px;
+    }
+
+    .offer-image{
+    width: 480px;
+  }
+
+  .offer-content{
+    width: 100%;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .offer-tl-img,
+  .offer-bl-img,
+  .offer-br-img{
+  display: none;
+}
+
 
     
 
@@ -1717,6 +2110,104 @@ footer .footer-lower-left{
 
 
 
+@media screen and (max-width:540px) {
+  
+  
+  /* Card section */
+  .card-container-wrapper{
+    min-width: 480px;
+    width: 100%;
+  }
+  
+  .card-image{
+    width: 350px;
+  }
+  
+  .card-content{
+    width: 100%;
+  }
+
+  /* Testimonial section */
+  .quote-img {
+  top: 10px;
+  right: 20px;
+  width: 50px;
+}
+
+  .testimonials-content {
+    width: 80%;
+    max-width: 100%;
+    left: 0;
+    padding: 0 20px;
+  }
+
+  .title-area {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .testimonial-slider-wrapper {
+    max-width: 350px;
+    overflow-x: hidden;
+  }
+
+
+  .testimonial-description {
+    font-size: 18px;
+  }
+
+  @keyframes slide-testimonial {
+  0%,
+  29% {
+    transform: translateX(0%);
+  }
+  33%,
+  62% {
+    transform: translateX(calc(-350px * 1));
+  }
+  66%,
+  95% {
+    transform: translateX(calc(-350px * 2));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* News card section */
+.news-cards-wrapper{
+      width: 90%;
+      
+    }
+
+    .news-card{
+      width: 100%;
+    }
+
+
+
+
+    /* Offer section */
+    .offer{
+      padding: 10px;
+    }
+
+    .offer-image{
+    width: 100%;
+  }
+
+  .offer-content{
+    width: 100%;
+  }
+
+  .offer-content h3{
+    font-size: 35px;
+  }
+
+
+}
 
 
 
@@ -1747,5 +2238,63 @@ footer .footer-lower-left{
     .footer-main-container > div{
         width: 100%;
     }
+
+
+      /* Testimonial Section */
+  
+  .testimonial-slider-wrapper {
+    max-width: 320px;
+    overflow-x: hidden;
+  }
+
+  @keyframes slide-testimonial {
+  0%,
+  29% {
+    transform: translateX(0%);
+  }
+  33%,
+  62% {
+    transform: translateX(calc(-320px * 1));
+  }
+  66%,
+  95% {
+    transform: translateX(calc(-320px * 2));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+  
+}
+
+
+  /* Team section */
+
+  .chef-img{
+    top: -60%;
+  }
+
+  .chef-card{
+    height: 260px;
+  }
+
+  .chef-card-container{
+    height: 450px;
+  }
+  .card-wrapper{
+    margin-bottom: -200px;
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+
+
+  /* Card Section */
+  .card-container-wrapper{
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .card-image{
+    width: 250px;
+  }
 
 }
